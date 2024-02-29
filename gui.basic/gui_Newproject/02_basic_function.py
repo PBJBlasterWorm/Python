@@ -2,9 +2,10 @@ from tkinter import *
 import tkinter.ttk as ttk
 from tkinter import filedialog
 import tkinter.messagebox as msgbox
+import PIL
 
 root = Tk()
-root.title("하하하하하")
+root.title("이미지 합치기")
 root.resizable(False, False)
 
 # 파일 추가
