@@ -18,11 +18,11 @@ clock = pygame.time.Clock()
 # 1. 사용자 게임 초기화 (배경 화면, 게임 이미지, 좌표, 속도, 폰트 등)
 
 # 배경 이미지 불러오기
-background = pygame.image.load("Python/pygame_basic/background.png")
+background = pygame.image.load("Python\pygame_basic\background.png")
 
 
 # 캐릭터 불러오기
-character = pygame.image.load("Python/pygame_basic/character.png")
+character = pygame.image.load("C:/Python/pygame_basic/character.png")
 character_size = character.get_rect().size # 이미지크기
 character_width = character_size[0] # 캐릭터 가로크기
 character_height = character_size[1] # 캐릭터 세로크기
@@ -37,7 +37,7 @@ to_y = 0
 character_speed = 0.6
 
 # 적 enemy 캐릭터
-enemy = pygame.image.load("Python/pygame_basic/enemy.png")
+enemy = pygame.image.load("C:/Python/pygame_basic/enemy.png")
 enemy_size = enemy.get_rect().size # 이미지 크기
 enemy_width = enemy_size[0] # 캐릭터 가로크기
 enemy_height = enemy_size[1] # 캐릭터 세로크기

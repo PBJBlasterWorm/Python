@@ -2,17 +2,16 @@ from tkinter import *
 import tkinter.ttk as ttk
 from tkinter import filedialog
 import tkinter.messagebox as msgbox
-import PIL
 
 root = Tk()
-root.title("이미지 합치기")
+root.title("하하하하하")
 root.resizable(False, False)
 
 # 파일 추가
 def add_file():
     files = filedialog.askopenfilenames(title="이미지 파일을 선택하세요", \
         filetypes=(("PNG 파일", "*.png"), ("모든 파일", "*.*")), \
-        initialdir=r"c:/Python") # 최초의 C:/ 경로를 보여줌            
+        initialdir=r"D:\DESKTOP\Python\Python\pygame._project") # 최초의 C:/ 경로를 보여줌            
         # 최초로 사용자가 지정한 경로를 보여줌
         
     # 사용자가 선택한 파일 목록
