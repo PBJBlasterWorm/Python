@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <!-- display: 요소의 rendering box 유형을 결정 -->
+    <!-- none: 요소가 렌더링 되지 않음 block: block level 요소처럼 렌더링  -->
+    <!-- inline: inline level처럼 렌더링 inline-block: inline level처럼 배치되나 block level의 성질을 가짐 -->
+    <!-- 즉 height, width의 박스모델 속성을 적용할수 있음 -->
+    <style>
+        .inline {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 10px solid red;
+            background: pink;
+        }
+        .block {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 10px solid red;
+            background: pink;
+        }
+        .inline-block {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 10px solid red;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div style="display: none">box1</div>
+    </div>
+    <div>
+        <div style="display: inline" class="inline">box2</div>
+    </div>
+    <div>
+        <div style="display: block" class="block">box3</div>
+    </div>
+    <div>
+        <div style="display: inline-block" class="inline-block">box4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+</head>
+<!-- z-index: 박스가 겹치는 순서를 지정 -->
+<!-- position이 static이 아닌경우 지정가능 -->
+<!-- 순서값이 없으면 생성순서(코드순서)에 따라 쌓임 -->
+<!-- 부모가 z-index값이 있으면 부모 안에서만 의미있다 -->
+<!-- 큰 값이 가장 위쪽이며 음수 사용가능 -->
+<style>
+    .child {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        border: 2px solid red;
+    }
+</style>
+<body>
+    <div class="z_area">
+        <div id="mybox" style="position: absolute; background-color: red;">mybox</div>
+        <div class="box" style="position: absolute; top: 20px; left: 20px;">z-index auto</div>
+        <div class="box" style="position: absolute; top: 40px; left: 40px;">z-index auto</div>
+        <div class="box" style="position: absolute; top: 60px; left: 60px;">z-index auto</div>
+        <div class="box" style="position: absolute; top: 80px; left: 80px;">z-index auto</div>
+    </div>
+
+    <div class="z_area">
+        <div id="mybox" style="position: absolute; background-color: red;">mybox</div>
+        <div class="box" style="position: absolute; top: 20px; left: 20px;">z-index 1</div>
+        <div class="box" style="position: absolute; top: 40px; left: 40px;">z-index 2</div>
+        <div class="box" style="position: absolute; top: 60px; left: 60px;">z-index 3</div>
+        <div class="box" style="position: absolute; top: 80px; left: 80px;">z-index 4</div>
+    </div>
+</body>
+</html>

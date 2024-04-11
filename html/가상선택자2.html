@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <title>가상선택자</title>
+    <style media="screen">
+        p:before {
+            color: red;
+            content: "before 가상 요소를 활용한 내용"
+        }
+        p:after {
+            color: blue;
+            content: "after 가상 요소를 활용한 내용"
+        }
+        p:first-line {
+            color: yellow;
+        }
+        p:first-letter {
+            font-size: 3em;
+        }
+    </style>
+<!-- before: 가장 앞에 요소를 삽입 -->
+<!-- after: 가장 뒤에 요소를 삽입 -->
+<!-- first-line: 요소의 첫번쨰 줄에 있는 텍스트 -->
+<!-- first-letter: 블록 레벨 요소의 첫번쨰 문자 -->
+</head>
+<!-- 가상요소: 미리 정의해놓은 위치에 삽입이 되도록 약속되어있는 보이지않는 요소 -->
+<body>
+    <p>what the fuckin!!!!!!!!!!!!!!!!!!! you mother fucker!</p>
+</body>
+</html>

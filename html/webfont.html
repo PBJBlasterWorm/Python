@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webfont</title>
+</head>
+<!-- 시스템폰트: 폰트패밀리로 선언한 그글꼴이 선택될때 시스템 상에서
+제공되는 값을 그대로 바꿀수 있는 폰트 -->
+<!-- 이미지폰트: 이미지 자체를 잘라서 제공하는 폰트 -->
+<!-- 웹폰트: 다른 글꼴을 서버에 저장해서 제공하거나 웹 경로를 가지고와서
+import해서 제공하는 폰트 -->
+<style>
+    @font-face {
+        font-family: webNanumGothic;
+        src: url(NanumGothic.eot);
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    body {
+        font-family:webNanumGothic
+    }
+</style>
+<body>
+    하하하하하하
+</body>
+</html>

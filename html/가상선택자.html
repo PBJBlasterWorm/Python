@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <title>가상선택자</title>
+    <style media="screen">
+        li:first-child { color: red;} 
+        li:last-child { color: blue;}
+        a:focus { background-color: yellow;}
+        a:hover { font-weight: bold;}
+        a:active { color: red;}
+    </style>
+    <!-- li:first-child: 첫번째 자식 요소선택 -->
+    <!-- li:last-child: 마지막 자식 요소선택 -->
+    <!-- a:link: 하이퍼링크이면서 아직 방문하지 않은 앵커-->
+    <!-- a:visited: 이미 방문한 하이퍼링크를 의미 -->
+    <!-- a:focus: 현재 입력 포커스를 갖고 있는 요소에 적용 -->
+    <!-- a:hover: 마우스 포인터가 위치해 있는 요소에 적용 -->
+    <!-- a:active: 사용자 입력에 의해 활성화된 요소에 적용 -->
+</head>
+<!-- 가상클래스: 미리 정의해놓은 상황에 적용이 되도록 약속되어있는 보이지 않는 클래스 -->
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <a href="http://naver.com">네이버</a>
+        <a href="http://google.com">구글</a>
+        <a href="http://daum.net">다음</a>
+    </ul>
+</body>
+</html>

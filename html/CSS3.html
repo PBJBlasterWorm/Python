@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=scale:1.0">
+    <title>CSS 3</title>
+</head>
+<style>
+    /* 다중 속성 */
+    p[class="foo"] { color: silver;} 
+    p[id="title"] { text-decoration: underline;}
+    /* 부분 속성 */
+    p[class~="color"] {font-style:italic} 
+    p[class^="color"] {font-style:italic}
+    p[class$="color"] {font-style:italic}
+    p[class*="color"] {font-style:italic}
+</style>
+<!-- ~= : 공백으로 구분한 단어가 포함되는 요소를 선택 -->
+<!-- ^= : 값이 color로 시작하면 스타일적용 -->
+<!-- $= : color로 끝나면 스타일적용 -->
+<!-- *= : color란 문자가 있으면 적용 -->
+<body>
+    <p class="foo">Hello</p>
+    <p class="bar">CSS</p>
+    <p class="bar" id="title">HTML</p>
+    <p class="color hot">red</p>
+    <p class="cool color">blue</p>
+    <p class="colorful">rainbow</p>
+</body>
+</html>

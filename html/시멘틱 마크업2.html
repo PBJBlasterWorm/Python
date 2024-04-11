@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>시멘틱 마크업2</title>
+</head>
+<body>
+    <!-- article -->
+    <!-- 문서, 페이지, 어플리케이션, 또는 사이트에서 독립적으로 배포가능하거나 재사용 -->
+    <!-- 할수있는 컨텐츠를 묶는 영역 -->
+    <!-- aside: 페이지내 주요 컨텐츠와 직접적이지는 않으나 간접적을 연관된 내용으로 구성된 별로의 부분 -->
+    <!-- 용도:블로그 사이드바, 광고 배너, 인용구, 관련 사이트 링크 -->
+    <!-- details: 사용자가 직접 조작형 보거나 숨길수 있는 부가적인 세부사항, summary는 details에서 화면에 보일 제목을 명시할때 씀 -->
+    <!-- figure: 사진, 도표, 삽화, 오디오, 비디오, 코드등을 담는 컨테이너 역할 -->
+    <!-- figcaption: figure를 설명하는 문구를 담는 태그로 figure안에 한번만 쓸수 있음 -->
+    <!-- footer: 웹 페이지의 맨 하단에 있는 글로벌푸터, 저자정보, 저작권정보, 연락처, 사이트맵,-->
+    <!-- 페이지 맨위로 되돌아갈수 있는 Top버튼, 연관 페이지등등을 포함 -->
+    <!-- header: 웹 페이지의 맨 위에 있는 글로벌헤더, 글이나 콘텐츠의 서두(서론,서문,도입부)를 나타낼때 씀 -->
+    <!-- 하나 이상의 제목요소, 로고나 아이콘, 저자(author) 정보 -->
+    <!-- main: 해당 문서의 body요소의 주요 컨텐츠를 정의할때 사용 -->
+    <!-- mark: 형광펜으로 칠한 것처럼 하이라이트된 텍스트를 정의(강조 목적) -->
+    <!-- nav: 다른 웹페이지로 연결하거나, 현재 웹 페이지의 콘텐츠 내부로 연결되는 탐색을 위한 링크가 있는 영역 -->
+    <!-- 메뉴, 목차, 색인등을 정의 -->
+    <h1>나의 하루</h1>
+    <article>
+        <h2>걍 거지같았다.</h2>
+        <p>그러하다 ㅇㅇㅇ 결국 난 운명하겠지......</p>
+    </article>
+    <article>
+        <h2>결론</h2>
+        그러니까 걍 포기해 ㅇㅇ
+    </article>
+    <aside class="sidebar" role="complementary">
+        <h3>부가정보</h3>
+        <p>이 영역은 주요 컨텐츠에 포함되어 있지 않은 별도로 분리된 부가정보를 표시</p>
+    </aside>
+    <details>
+        <summary>오늘의 환율</summary>
+        <ul>
+            <li>달러($) : 1,135.90</li>
+            <li>유로(E) : 1,284.08</li>
+            <li>엔(ㄷ) : 1,014.88</li>
+        </ul>
+    </details>
+    <figure>
+        <img src="test.png" width="500" height="300" alt="테스트 하하하">
+        <figcaption>'테스트용 사진</figcaption>
+    </figure>
+    <footer>
+        <p>여기는 PBJ의 사이트</p>
+        <address>Contact webmaster for more infomation. 010-4455-7692</address>
+    </footer>
+    <article>
+        <header>
+            <a class="logo" href="#">yes baby!!</a>
+            <h3>날씨 정보</h3>
+            <h4>2월 19일</h4>
+            <p>- 기상청 제공 -</p>
+        </header>
+        <p>서울 : 맑음</p>
+        <p>대전 : 흐림</p>
+        <p>부산 : 비</p>
+    </article>
+    <main>
+        <h1>하늘색</h1>
+        <p>푸르른 하늘같은 색이다.</p>
+        <article>
+            <h2>다이어트</h2>
+            <p>체중 조절을 하는 것이다</p>
+        </article>
+        <article>
+            <h2>바나나</h2>
+            <p>길고 우람한 노란색 과일</p>
+        </article>
+    </main>
+    <mark>우리는 모두 인류인이다.</mark>
+    <p>그래 우리는 <mark>인류인</mark>이란것만 명심해라.</p>
+    <nav>
+        <ul>
+            <li><a href="/">홈</a></li>
+            <li><a href="/about">회사 정보</a></li>
+            <li><a href="/services">서비스</a></li>
+            <li><a href="/contact">연락처</a></li>
+            <li>하하하</li>
+        </ul>
+    </nav>
+</body>
+</html>

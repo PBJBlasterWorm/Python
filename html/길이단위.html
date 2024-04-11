@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>길이단위</title>
+    <style>
+        div {
+            font-size: 16px;
+        }
+        .px {
+            font-size: 16px;
+        }
+        .pt {
+            font-size: 12pt;
+        }
+        .percent {
+            font-size: 200%;
+        }
+        .em {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<!-- 절대길이 px: pixels(1px = 1/96th of 1in), pt: points(1pt = 1/72 of 1in) -->
+<!-- 상대길이 %: percentage, em: font size of the element, rem: font size of the root element,
+vw: 1 % of viewport`s width -->
+<body>
+    <div>
+        <p class="px">단위 16px로 선언된 텍스트입니다.</p>
+        <p class="pt">단위 12pt로 선언된 텍스트입니다.</p>
+        <p class="percent">단위 100%로 선언된 텍스트입니다.</p>
+        <p class="em">단위 1em로 선언된 텍스트입니다.</p>
+    </div>
+</body>
+</html>

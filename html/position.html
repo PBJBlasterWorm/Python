@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+<!-- position: 요소의 위치를 원하는 곳으로 이동 -->
+<!-- top, bottom, left, right 상하좌우로 좌표값을 설정가능ㅇ -->
+<!-- offset: 해당 좌표에 대한 거리 -->
+<!-- static(기본값): normal-flow에 따라 배치, offset 적용 x -->
+<!-- relative: 자신이 원래 있어야할 위치를 기준으로 offset 적용
+부모의 position에 영향받지 않으며 normal-flow의 흐름을 따름 -->
+<!-- 주변요소에 영향을 주지않음 -->
+<!-- absolute: 부모 요소의 위치를 기준으로 offset적용 -->
+<!-- 부모가 position(static 제외)값을 가지면 offset값의 시작점이 된다. -->
+<!-- normal-flow의 흐름에서 벗어남 -->
+<!-- fixed: 뷰포트를 기준으로 offset 적용 -->
+<!-- 화면 스크롤을 움직여도 항상 정해진 위치에 출력되며 부모의 위치영향을 안받음 -->
+<style>
+    .parent {
+        border: 1px dashed #aaa;
+        padding: 10px;
+    }
+    .sibling {
+        padding: 5px;
+        background-color: #eee;
+        text-align: center;
+    }
+    .child, .child_offset {
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+        background-color: #dc3636;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        border: 1px solid #333;
+    }
+    .child_offset {
+        background-color: #3677dc;
+    }
+    .static {
+        position: static;
+    }
+    .relative {
+        position: relative;
+    }
+    .absolute {
+        position: absolute;
+    }
+    .fixed {
+        position: fixed;
+    }
+</style>
+<body>
+    <div style="display: none">
+        <h1>position (offset 미지정)</h1>
+        <h2>static (기본)</h2>
+        <div class="parent">
+            <div class="sibling">Sibling 1</div>
+            <div class="child static">static</div>
+            <div class="sibling">Sibling 2</div>
+        </div>
+
+        <h2>relative</h2>
+        <div class="parent">
+            <div class="sibling">Sibling 1</div>
+            <div class="child relative">relative</div>
+            <div class="sibling">Sibling 2</div>
+        </div>
+
+        <h2>absolute</h2>
+        <div class="parent">
+            <div class="sibling">Sibling 1</div>
+            <span class="child absolute">absolute</span>
+            <div class="sibling">Sibling 2</div>
+        </div>
+
+        <h2>fixed</h2>
+        <div class="parent">
+            <div class="sibling">Sibling 1</div>
+            <div class="child fixed">fixed</div>
+            <div class="sibling">Sibling 2</div>
+        </div>
+    </div>
+
+    <div>
+        <h1>position (offset 지정)</h1>
+        <h2>static (기본)</h2>
+        <div class="parent">
+            <div class="sibling">Sibling 1</div>
+            <div class="child_offset static" style="top: 40px; right: 40px;">static</div>
+            <div class="sibling">Sibling 2</div>
+        </div>
+
+        <h2>relative</h2>
+        <div class="parent">
+            <div class="sibling">Sibling 1</div>
+            <div class="child_offset relative" style="top: 40px; left: 40px;">relative</div>
+            <div class="sibling">Sibling 2</div>
+        </div>
+
+        <h2>absolute</h2>
+        <div class="parent relative">
+            <div class="sibling">Sibling 1</div>
+            <span class="child_offset absolute" style="top: 40px; left: 80px;">absolute</span>
+            <div class="sibling">Sibling 2</div>
+        </div>
+
+        <h2>fixed</h2>
+        <div class="parent">
+            <div class="sibling">Sibling 1</div>
+            <div class="child_offset fixed" style="top: 0; right: 0">fixed</div>
+            <div class="sibling">Sibling 2</div>
+        </div>
+    </div>
+</body>
+</html>

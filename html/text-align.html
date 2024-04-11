@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textalign</title>
+    <!-- left(기본값): 텍스트를 왼쪽으로 정렬, right: 텍스트를 오른쪽으로 정렬 -->
+    <!-- center: 텍스트를 중앙으로 정렬, justify: 텍스트를 라인 양쪽 끝으로 붙여서 정렬(마지막 라인은 정렬x) -->
+    <!-- text-align은 인라인레벨에 적용됨 -->
+    <!-- 블록레벨을 text-align으로 정렬할수 없다(할거면 margin으로 정렬해라) -->
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background: red;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        하하하하하하하하하
+    </div>
+</body>
+</html>

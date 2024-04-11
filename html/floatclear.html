@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=scale:1.0">
+    <style>
+        .container div {
+            width: 100px;
+            height: 100px;
+        }
+        .container div:nth-child(1) {
+            background-color: green;
+        }
+        .container div:nth-child(2) {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<!-- float: 요소를 보통의 흐름에서 벗어나게 함 -->
+<!-- 주변 텍스트나 인라인요소가 주위를 감싸는 특징을 가짐 -->
+<!-- 대부분 요소의 display값을 block으로 변경함 -->
+<!-- 예외로 display값이 inline-table, flex일떄는 그대로 유지-->
+<!-- none(기본값): float 시키지 않음 -->
+<!-- left: 좌측으로 float시킴 right: 우측으로 float시킴 -->
+<!-- clear: floating된 요소에서 벗어나 다음 행으로 이동할때 선언 -->
+<!-- left,right,both(양쪽) 사용가능 -->
+<!-- 블록레벨 요소에만 적용됨 -->
+<body>
+    <h2>하하하하하</h2>
+    <div>
+        <div class="container">
+            <div style="float: left;">
+                <span style="display: block; clear: left;">left</span>
+                <p style="border: 2px solid red;">gkgkgkgkgk</p>
+            </div>
+            <div style="float: right">
+                <span style="display: block; clear: right;">right</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
